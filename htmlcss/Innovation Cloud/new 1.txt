@@ -1,0 +1,72 @@
+menu start game: 49,654
+wait 3 secs
+choose lineup:67,1013
+wait 3 secs
+autoplay:757,1038
+wait 140 secs
+continue:91,911
+wait 140 secs
+continue:91,911
+wait 140 secs
+continue:91,911
+wait 3 secs
+
+
+end of game:
+continue
+wait 3s
+continue
+open pack, wait 3 secs 3x: 57,2073
+wait 3 secs
+loop
+
+wait 3 secs
+
+
+Var #count
+Var #packCount
+:start
+	Set #count 0
+	Set #packCount 0
+	//start game
+	touchDown 0 49 654
+	wait 100
+	touchUp 0 
+	wait 3000
+	//choose lineup
+	touchDown 0 67 1013
+	wait 100
+	touchUp 0
+	wait 3000
+	//autoplay
+	touchDown 0 757 1038
+	wait 100
+	touchUp 0
+
+	:playQuarter
+		wait 140000
+		touchDown 0 91 911
+		wait 100
+		touchUp 0
+		calc #count #count + 1
+		if #count < 3
+			goto :playQuarter
+			
+	wait 3000
+	touchDown 0 91 911
+	wait 100
+	touchUp 0
+	wait 3000
+	
+	:openPack
+		touchDown 0 57 2073
+		wait 100
+		touchUp 0
+		wait 3000
+		calc #openPack #openPack + 1
+			if #openPack < 3
+				goto :openPack
+	
+:end
+
+

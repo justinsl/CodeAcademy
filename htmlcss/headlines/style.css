@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .col-md-4 {
+    margin: 0 auto 0;
+    text-align: center;
+    width: 100%;
+  }
+  .cards img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    text-align: center;
+  }
+
+  .nav li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .cards img {
+    width: 100%;
+  }
+  
+  .footer container{
+		text-align:center;
+	}
+	
+}
+
+/*header*/
+.header{
+  padding:20px 0;
+}
+.header ul{
+  position: relative;
+  top:10px;
+  
+  border-bottom: 1px solid grey;
+  padding:0;
+
+}
+
+.header a{
+  color:black;
+}
+
+/*jumbotron*/
+.jumbotron{
+	text-align:left;
+}
+.jumbotron h2{
+  font-size:50px;
+  display:block;
+  padding:80px 0;
+}
+
+.jumbotron span{
+	color:#ffc200;
+}
+
+/* banner */
+.banner{
+	background:#333;
+	text-align:center;
+	color:white;
+}
+
+.banner .container{
+	padding:20px 0;
+}
+
+/* cards */
+.cards{
+	text-align:center;
+	background:#FFC200;
+}
+
+.cards h2{
+	display:block;
+	margin:70px 0 50px;
+}
+
+.cards img{
+	margin:10px 0;
+}
+
+/* footer */
+.footer{
+	padding:40px;
+	background:black;
+	color:white;
+}
+
+.footer a{
+	display:inline-block;
+	height:24px;
+	width:24px;
+	margin:0 5px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,153 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+.header{
+	padding:40px;
+}
+
+.nav {
+    float: right;
+    width: 340px;
+}
+
+.nav-pills li a {
+  color: #d8192f; 
+  border:1px solid #d8192f; 
+  margin-left:10px; 
+  text-align:center; 
+  width:100px; 
+} 
+
+.nav-pills li.active a, .section .btn:hover, .nav-pills li a:hover {
+    background-color: rgba(216,25,47,1);
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+    color: #fff;
+	font-family:'arvo',serif;
+}
+
+.nav-pills li.active a:hover {
+  background-color: #d8192f;
+}
+
+
+/* Jumbotron PROBLEM*/
+.jumbotron {
+  height: 500px;
+  background:url(https://s3.amazonaws.com/codecademy-content/projects/bestbite/bg.jpg) no-repeat center center;
+  background-size:cover;	
+  padding-top:30px;
+}
+
+.jumbotron h1{
+	color:white;
+	text-align:right;
+  vertical-align:middle;
+  font-size:55px;
+}
+
+.jumbotron h1:first-child{
+  margin:120px 0 0;
+}
+
+
+
+/* Banner BUTTON PROBLEM*/
+.banner, .supporting {
+  text-align: center;
+  padding-top: 40px 40px 40px;
+}
+
+.banner {
+  background-color:#36343f;
+  height:180px; 
+  color: #fff;
+  
+}
+
+.banner .btn{
+    background-color: rgba(216,25,47,.5);
+    border: 0px;
+    margin: 24px auto;
+    color: white;
+	text-align:center;
+	padding:10px 20px;
+}
+
+.banner .container{
+	padding:25px;
+}
+
+
+.page-header{
+	text-align:center;
+}
+
+/*section*/
+.section{
+	text-align:center;
+}
+
+.section h2{
+	color:red;
+	font-size:25px;
+}
+
+.section p{
+	margin:0px;
+}
+
+/*footer*/
+.footer{
+	margin-top:30px;
+	text-align:center;
+}
+
+/* Media Queries */
+@media (max-width: 680px) {
+  .col-md-6 {
+  padding: 0px;
+  }
+  
+  .header h1 { 
+    margin-bottom: 20px; 
+    text-align: center; 
+  } 
+  
+  .nav { 
+    float: none; 
+    margin: 0 auto; 
+  } 
+  
+  .banner { 
+    height: 220px; 
+  } 
+  
+  .nav-pills li:first-child a  {
+    margin-left: 0; 
+  }
+}
+
+/*stuff*/
+
+.center{
+	margin-left:0px;
+	margin-right:0px;
+	float:none;
+}
+
+.vcenter{
+  display:inline-block;
+  vertical-align:middle;
+  line-height:normal;
+}

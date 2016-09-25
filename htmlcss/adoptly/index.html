@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="header">
+		<!-- TODO: needs hover highlight cleanup -->
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation"><a href="#" id="title">Adoptly</a></li>
+					<li role="presentation"><a href="#">About</a></li>
+					<li role="presentation"><a href="#">Animals</a></li>
+					<li role="presentation"><a href="#">Blog</a></li>
+					<li role="presentation"><a href="#">Events</a></li>
+				</ul>
+				
+			</div>
+		</div>
+
+<!-- 
+In the jumbotron, add text for the heading and change the background image. Feel free to use your own image. Here's the image we used.
+ -->
+		<div class="jumbotron">
+			<div class="container">
+				<h1><strong>Mmm smells goo0o0od....</strong></h1>
+			</div>
+		</div>
+
+<!-- In the supporting section, use Bootstrap's grid to add columns for each piece of content. Each piece of content is made up of a heading, a paragraph, and a link styled as a button. -->
+
+		<div class="supporting">
+			<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<h2>Search</h2>
+							<p>Find a pet based on location, type, breed, age, and gender. We look through hundreds of shelters, agencies, and rescue sites.</p>
+							<div class="goBtn"><a href="#">GO</a></div>
+							
+
+						</div>
+						<div class="col-md-4">
+							<h2>Learn</h2>
+							<p>Read articles on feeding, training, grooming, and more. Our resources ensure that you are fully prepared as a new pet owner.</p>
+							<div class="goBtn"><a href="#">GO</a></div>
+						</div>
+						<div class="col-md-4">
+							<h2>Help</h2>
+							<p>Get involved to help pets in need. You can make a difference through volunteering, social media, and donations.</p>
+							<div class="goBtn"><a href="#">GO</a></div>
+						</div>
+					</div>
+			</div>
+		</div>
+		
+<!-- In the footer, use Bootstrap's grid to add columns for each piece of content. There is one piece of content for the copyright, and another piece of content for the menu. Color the background #e52364. -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p>Adoptly &copy</p>
+					</div>
+
+					<div class="col-md-6" id="footerBtns">
+						<a href="#"><div class="footerBtn">Contact</div></a>
+						<a href="#"><div class="footerBtn">FAQ</div></a>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
